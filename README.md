@@ -5,11 +5,9 @@ Home: https://github.com/moj-analytical-services/splink
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/splink-feedstock/blob/master/LICENSE.txt)
 
 Summary: Implements Fellegi-Sunter's canonical model of record linkage in Apache Spark, including EM algorithm to estimate parameters of the model
-
-
 
 Current build status
 ====================
