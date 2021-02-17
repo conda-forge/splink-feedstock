@@ -1,5 +1,5 @@
 {% set name = "splink" %}
-{% set version = "0.4.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dccf87b83ea875fcf22d5093fe21b136349b23a7f411730cb6e48b4c6226352
+  sha256: 68f26d6e4c4b5766b3fb09eaca9c6534caf54e35264f446eb5d59f6333d54bfe
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6,<4.0
     - jsonschema
     - pyspark
-
+    - typeguard
 test:
   imports:
     - splink
