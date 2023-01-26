@@ -1,5 +1,5 @@
 {% set name = "splink" %}
-{% set version = "1.0.6" %}
+{% set version = "3.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e63383a59d64d5dd71eb039ac713ae58bfcba857036f4cf7ea52b1c347d2f479
+  sha256: 86c8473b2438d666b74fd82610271d84065f1cbc5d259c86b69643268ab2d572
 
 build:
   noarch: python
@@ -18,12 +18,18 @@ requirements:
   host:
     - python >=3.6,<4.0
     - pip
-    - poetry
+    - poetry >=0.12
   run:
     - python >=3.6,<4.0
-    - jsonschema
-    - pyspark
-    - typeguard
+    - jsonschema >=3.2,<5.0
+    - python-duckdb >=0.6.0,<0.7.0
+    - pandas >=1.0.0,<2.0.0
+    - sqlglot >=5.1.0,<6.0.0
+    - altair >=4.2.0
+    - jinja2 >=3.0.3,<4.0.0
+  run_constrained:
+    - pyspark >=3.2.1
+
 test:
   imports:
     - splink
@@ -33,7 +39,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Implements Fellegi-Sunter's canonical model of record linkage in Apache Spark, including EM algorithm to estimate parameters of the model
+  summary: Fast, accurate and scalable probabilistic data linkage using your choice of SQL backend.
+  doc_url: https://moj-analytical-services.github.io/splink/
 
 extra:
   recipe-maintainers:
