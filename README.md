@@ -146,5 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@ADBond](https://github.com/ADBond/)
+* [@ThomasHepworth](https://github.com/ThomasHepworth/)
 * [@cdesouza21](https://github.com/cdesouza21/)
 
