@@ -1,11 +1,11 @@
-About splink
-============
+About splink-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/splink-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/moj-analytical-services/splink
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/splink-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fast, accurate and scalable probabilistic data linkage using your choice of SQL backend.
 
