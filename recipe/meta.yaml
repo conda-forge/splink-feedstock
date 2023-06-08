@@ -1,5 +1,5 @@
 {% set name = "splink" %}
-{% set version = "3.9.0" %}
+{% set version = "3.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa118f3cca19161832da26729878cee70878df56790a8051a867ff324e6f0adf
+  sha256: 3845e6c544ccb3807eb6bf05ff03789d2cbd44570fbe78f9ab09b29358d5e49a
 
 build:
   noarch: python
