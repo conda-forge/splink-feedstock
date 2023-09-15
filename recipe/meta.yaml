@@ -11,20 +11,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - pip
     - poetry >=0.12
   run:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - jsonschema >=3.2,<5.0
     - python-duckdb >=0.8.0
-    - pandas >=1.0.0
-    - sqlglot >=5.1.0
+    - pandas >=1.2.0
+    - sqlglot >=7.0.0
     - altair >=5.0.1,<6.0
     - jinja2 >=3.0.3,<4.0.0
   run_constrained:
