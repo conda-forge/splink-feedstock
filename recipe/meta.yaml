@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,7 +29,7 @@ requirements:
     - jinja2 >=3.0.3,<4.0.0
   run_constrained:
     - pyspark >=3.2.1
-    - sqlalchemy >=1.4.0,<2.0.0
+    - sqlalchemy >=1.4.0
 
 test:
   imports:
