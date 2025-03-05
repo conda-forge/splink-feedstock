@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,6 +29,7 @@ requirements:
     - sqlglot >=13.0.0
     - altair >=5.0.1,<6.0
     - jinja2 >=3.0.3
+    - python-igraph >=0.11.2
   run_constrained:
     - pyspark >=3.2.1
     - sqlalchemy >=1.4.0
@@ -36,8 +37,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - splink
+  commands:
+    - pip check
 
 about:
   home: https://github.com/moj-analytical-services/splink
