@@ -27,11 +27,11 @@ requirements:
     - sqlglot >=17.6.0
     - altair >=5.0.1
     - jinja2 >=3.0.3
-    - numpy >=1.17.3
+    - numpy >=1.19.3
     - python-igraph >=0.11.2
   run_constrained:
     - pyspark >=3.5.0
-    - sqlalchemy >=1.4.0
+    - sqlalchemy >=2.0.0
 
 test:
   requires:
