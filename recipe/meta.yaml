@@ -1,6 +1,6 @@
 {% set name = "splink" %}
-{% set version = "4.0.11" %}
-{% set python_min = python_min|default("3.8") %}
+{% set version = "4.0.12" %}
+{% set python_min = python_min|default("3.9") %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df9f22bf53380d143a0f5d4340717ce56b99b360651671e3cb8d7cecbd05aabd
+  sha256: 66a7a08e354d174cc9f126a74f3811080804fbc774506952fe618dad80f1900a
 
 build:
   noarch: python
@@ -27,11 +27,11 @@ requirements:
     - sqlglot >=17.6.0
     - altair >=5.0.1
     - jinja2 >=3.0.3
-    - numpy >=1.17.3
+    - numpy >=1.19.3
     - python-igraph >=0.11.2
   run_constrained:
     - pyspark >=3.5.0
-    - sqlalchemy >=1.4.0
+    - sqlalchemy >=2.0.0
 
 test:
   requires:
