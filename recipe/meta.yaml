@@ -1,5 +1,5 @@
 {% set name = "splink" %}
-{% set version = "4.0.17" %}
+{% set version = "5.0.0" %}
 {% set python_min = python_min|default("3.10") %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ab6f955a50a8e873a27ba43ccd34b922b0378aa213dbecbe39aa4730fb9efe00
+  sha256: 389dfc2669b08889324571d5ef19a068bc8901e3a6ea1cc5c23af95fbe021177
 
 build:
   noarch: python
